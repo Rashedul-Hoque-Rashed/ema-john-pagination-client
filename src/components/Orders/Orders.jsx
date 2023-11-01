@@ -11,7 +11,7 @@ const Orders = () => {
 
     const handleRemoveFromCart = (id) => {
         const remaining = cart.filter(product => product._id !== id);
-        console.log(cart, id)
+        // console.log(cart, id)
         setCart(remaining);
         removeFromDb(id);
     }
